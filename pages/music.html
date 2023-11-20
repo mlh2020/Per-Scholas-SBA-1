@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Lorem Ipsum Records - Music</title>
+</head>
+<body>
+    <header>
+        <h1>Lorem Ipsum Records</h1>
+        <nav>
+            <!--Dropdown links to other pages-->
+            <div class="dropdown">
+                <button class="dropbtn">Pages</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="artists.html">Artists</a>
+                    <a href="music.html">Music</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Our Catalog</h2>
+        <section class="content">
+            <form action="#">
+                <!--Labels for would-be search categories-->
+                <label for="artistName">Artist Name:</label>
+                <input type="search" id="artistName" name="artistName" required>
+    
+                <label for="description">Record Title:</label>
+                <input type="search" id="image" name="image" required>
+    
+                <label for="image">Release Date:</label>
+                <input type="search" id="image" name="image" required>
+    
+                <input type="submit" value="Search">
+            </form>
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Recent Releases</th>
+                    <th>Description</th>
+                    <th>Cover</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table for showing recent label releases -->
+                <tr>
+                    <td>DJ Lorem - Ipsum EP</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate culpa aliquam quae ipsam fuga ea in. Asperiores veniam dolore exercitationem.</td>
+                    <td>
+                        <div class="record">
+                            <img src="../images/recordStill.png" alt="">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DJ Ipsum - Lorem EP</td>
+                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, excepturi! Possimus, repellendus saepe maiores dignissimos ipsam unde quis deleniti accusantium. Adipisci, deserunt. Totam, reiciendis iure!</td>
+                    <td>
+                        <div class="record">
+                            <img src="../images/recordStill.png" alt="">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DJ Lorem Ipsum - Ipsum Lorem LP</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque mollitia non deserunt inventore culpa obcaecati maiores voluptate!</td>
+                    <td>
+                        <div class="record">
+                            <img src="../images/recordStill.png" alt="">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <!--Fake copyright for my fake label lol-->
+        <p>&copy; 2023 Lorem Ipsum Records</p>
+    </footer>
+</body>
+</html>

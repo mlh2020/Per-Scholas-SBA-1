@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: grey;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    animation: shift 0.5s infinite;
+}
+
+.content {
+    padding: 20px;
+}
+
+.dropbtn {
+    background: linear-gradient(-45deg, black, gray);
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    transition-duration: 3s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    animation: fade 15s infinite;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    /*background-color: black;*/
+    background: linear-gradient(-45deg, black, gray);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition-duration: 3s;
+}
+
+@keyframes shift {
+    0% {color: white;}
+    25% {color: magenta;}
+    50% {color: red;}
+    75% {color: lightskyblue;}
+    100% {color: lightgreen}
+}
+
+@keyframes fade {
+    0% {background-color: white;}
+    25% {background-color: darkgray;}
+    50% {background-color: gray;}
+    75% {background-color: lightgray;}
+    100% {background-color: white;}
+}
+
+footer:hover{
+    color: black;
+}
+
+/* Flexbox for responsive design */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.content {
+    flex: 1;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+
+nav li {
+    margin: 0;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid grey;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: grey;
+    background: linear-gradient(45deg, black, gray);
+    color: white;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    margin-bottom: 16px;
+}
+
+/* Responsive layout adjustments */
+@media only screen and (min-width: 600px) {
+    body {
+        flex-direction: row;
+    }
+
+    nav {
+        margin-bottom: 0;
+        margin-right: auto;
+    }
+
+    .content {
+        flex: 2;
+        padding: 20px;
+    }
+}

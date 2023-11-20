@@ -12,6 +12,27 @@ header {
     animation: shift 0.5s infinite;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.record {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profilePic {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .content {
     padding: 20px;
 }
